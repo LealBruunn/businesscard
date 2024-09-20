@@ -1,0 +1,163 @@
+* {
+    margin: 0%;
+}
+
+#principal{
+    display: grid;
+    grid-auto-flow: column;
+    color: white;
+
+}
+
+#perfil {
+    text-align: center;
+    padding-top: 3em;
+    background: #27272c;
+    
+    
+}
+
+h1 {
+    font-family: 'Marcellus SC', serif;
+    background: #27272c;
+    color: white;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    background: #27272c;
+    color: aliceblue;
+}
+
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+ 
+}
+
+#extra {
+    text-align: center;   
+    padding-bottom: 15px;
+}
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #27272c;
+}
+
+
+
+button {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    margin: 30px;
+    width: 200px;
+    height: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    letter-spacing: 0.2rem;
+    width: 220px;
+    height: 52px;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    animation: box 3s infinite;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #272822;
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+
+footer{
+    color: white;
+    background: #27272c;
+    font-family: 'Montserrat', sans-serif;
+    bottom: 0;
+    width: 100%;
+ }
+
+ /* estágio de animação do botão */ 
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes box {
+    0% {
+        box-shadow: #27272c;
+    }
+
+    50% {
+        box-shadow: 0 0 25px var(--clr);
+    }
+
+    100% {
+        box-shadow: #27272c;
+    }
+}
+ /* RESPONSIVIDADE */ 
+@media screen and (max-width: 600px) {
+
+    * {
+        margin: 0;
+    }
+
+    .social-nav {
+        padding: 5px;
+        padding-top: 15px;
+    }
+
+    #principal {
+        display: block;
+        font-size: 12px;
+    }
+
+    #perfil,
+    #projetos,
+    #calact {
+        text-align: center;
+        padding-top: 2em;
+
+    }
+
+    #projetos {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        background: #27272c;
+        min-height: 0vh;
+    }
+}
