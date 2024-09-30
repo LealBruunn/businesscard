@@ -68,3 +68,68 @@ footer{
 
    
 }
+
+
+.titulo{
+    text-align: center;
+    font-size: 80px;
+    color: rgb(152, 150, 179);
+    padding-top: 30px;
+}
+.itens{
+    text-transform: uppercase;
+    color: rgb(164, 163, 180);
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+}
+.banner{
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button{
+    background-color: #2196F3;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+}
+.button:hover{
+    background-color: #0b1136;
+}
+
+footer{
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+ }
+
+/* RESPONSIVIDADE */ 
+@media screen and (max-width: 600px) {
+
+    * {
+        margin: 0;
+    }
+
+    .titulo {
+        padding: 5px;
+        padding-top: 15px;
+    }
+
+   
+}
